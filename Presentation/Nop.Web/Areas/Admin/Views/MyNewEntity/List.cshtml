@@ -1,0 +1,140 @@
+﻿@model IList<Nop.Core.Domain.Catalog.MyNewEntity>
+
+@{
+    //page title
+    ViewBag.Title = "Liste";
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("MyNewEntities");
+}
+
+
+
+<nop-antiforgery-token />
+<div class="content-header clearfix">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelForModel("isim Giriniz")
+                    @Html.TextBox("TxtName", null, new { @class = "form-control", placeholder = "Bir isim Giriniz" })
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+
+                    @Html.LabelForModel("Soyisim Giriniz")
+                    @Html.TextBox("TxtSurname", null, new { @class = "form-control", placeholder = "Bir Soyisim Giriniz" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                @Html.LabelForModel("Kaydetmek için Butona Tiklayiniz")
+                <input id="BtnKaydet" type="button" class="form-control btn btn-success" value="Kaydet" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+<div id="VerileriBurayaBas">
+    <div class="container">
+        <table id="BtnRemoveEntityTable" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sil</th>
+                    <th scope="col">Isim</th>
+                    <th scope="col">SoyIsim</th>
+                    <th scope="col">GUNCELLE</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var myNewEntity in Model)
+                {
+                <tr id="id_@myNewEntity.Id">
+                    <th scope="row"><a id="@myNewEntity.Id" class="btn btn-danger btn-xs BtnRemoveEntity" data-id="@myNewEntity.Id" onclick="Sil(@myNewEntity.Id)">@myNewEntity.Id</a></th>
+                    <td>@myNewEntity.MyEntityName</td>
+                    <td>@myNewEntity.MyEntitySurname</td>
+                    <td><a href="/Admin/MyNewEntity/UpdateEntity/@myNewEntity.Id" class="btn btn-warning btn-xs">Guncelle</a></td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+
+<!--  SCRIPT DOSYASI  -->
+<script>
+
+
+    $(function () {
+
+        $("#BtnKaydet").click(function () {
+            var textName = $("#TxtName").val();
+            var textSurname = $("#TxtSurname").val();
+            if (textName.length < 2 || textSurname.length < 2) {
+                alert("Lutfen en az 3 Karakter Girisi yapiniz");
+            } else {
+
+                var _data = {
+                    txtName: textName,
+                    txtSurname: textSurname
+                }
+
+                $.ajax({
+                    type: "GET",
+                    url: "/Admin/MyNewEntity/AddNew",
+                    //  contentType: "application/json; charset=utf-8",
+                    //  dataType: "json",
+                    data: _data,
+                    success: function (s) {
+                        $("#VerileriBurayaBas").html(s);
+                        $("#TxtName").val("");
+                        $("#TxtSurname").val("");
+
+                    },
+                    error: function (d) {
+                        console.log(d);
+                        //console.log("Calismadi");
+                        alert("Beklenmedik Bir Hata Olustu... Sistem Yoneticiniz ile irtibata geciniz");
+                    }
+                });
+            }
+        });
+    }); // EKLEME ISLEMi
+
+
+
+    // SILME ISLEMI
+    function Sil(Id) {
+
+        if (confirm("Silmek Istediginizden Emin Misiniz ?")) {
+            var deger = Id;
+         
+            var _id = deger;
+            var _data = { id: _id }
+            $.ajax({
+                type: "GET",
+                url: "/Admin/MyNewEntity/RemoveEntity",
+                data: _data,
+                success: function (d) {
+                   //a nesnesinin Id si deger olanın parentını sil. $(input[name="RMA"]) -> böyle yazsaydık inputun name i RMA olanı alır 
+                    $("a[Id=" + deger + "]").parent().parent().remove();
+                },
+                error: function (d) {
+                    console.log(d);
+                }
+            });
+        }
+    };
+    
+</script>
+

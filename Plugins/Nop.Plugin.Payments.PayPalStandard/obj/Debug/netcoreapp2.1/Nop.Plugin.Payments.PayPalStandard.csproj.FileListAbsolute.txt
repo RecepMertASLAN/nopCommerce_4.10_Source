@@ -1,0 +1,15 @@
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\plugin.json
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\Configure.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\PaymentInfo.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\_ViewImports.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\logo.jpg
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.deps.json
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.dll
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.pdb
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.csprojAssemblyReference.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.csproj.CoreCompileInputs.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.AssemblyInfoInputs.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.AssemblyInfo.cs
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.csproj.CopyComplete
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.dll
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Debug\netcoreapp2.1\Nop.Plugin.Payments.PayPalStandard.pdb

@@ -1,0 +1,15 @@
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\plugin.json
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\Configure.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\PublicInfo.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\_ViewImports.cshtml
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\logo.jpg
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.deps.json
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.pdb
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.csprojAssemblyReference.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.csproj.CoreCompileInputs.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfoInputs.cache
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfo.cs
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.csproj.CopyComplete
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\RMA\Desktop\NopCommerce\nopCommerce_4.10_Source\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\netcoreapp2.1\Nop.Plugin.Widgets.GoogleAnalytics.pdb

@@ -1,0 +1,27 @@
+﻿@model IList<Nop.Core.Domain.Catalog.MyNewEntity>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="container">
+    <table id="BtnRemoveEntityTable" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Sil</th>
+                <th scope="col">Isim</th>
+                <th scope="col">SoyIsim</th>
+                <th scope="col">GUNCELLE</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var myNewEntity in Model)
+            {
+                <tr id="id_@myNewEntity.Id">
+                    <th scope="row"><a id="@myNewEntity.Id" class="btn btn-danger btn-xs BtnRemoveEntity" data-id="@myNewEntity.Id" onclick="Sil(@myNewEntity.Id)">@myNewEntity.Id</a></th>
+                    <td>@myNewEntity.MyEntityName</td>
+                    <td>@myNewEntity.MyEntitySurname</td>
+                    <td><a href="/Admin/MyNewEntity/UpdateEntity/@myNewEntity.Id" class="btn btn-warning btn-xs">Guncelle</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

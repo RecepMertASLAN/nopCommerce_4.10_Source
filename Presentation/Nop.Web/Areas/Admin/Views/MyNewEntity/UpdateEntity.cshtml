@@ -1,0 +1,63 @@
+﻿@model Nop.Core.Domain.Catalog.MyNewEntity
+@{
+    //page title
+    ViewBag.Title = "Guncelle";
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("MyNewEntities");
+}
+
+<form asp-controller="MyNewEntity" asp-action="UpdateEntityNew" method="post" id="mynewentity-form">
+    <div class="content-header clearfix">
+        <h1 class="pull-left">
+            @T("MyNewEntity Guncelle")
+            <small>
+                <i class="fa fa-arrow-circle-left"></i>
+                <a asp-action="List">@T("Back To List")</a>
+            </small>
+        </h1>
+        <div class="pull-right">
+
+            <button type="submit" name="save" class="btn bg-blue">
+                <i class="fa fa-floppy-o"></i>
+                @T("Admin.MyNewEntities.Kaydet")
+            </button>
+
+            @* @await Component.InvokeAsync("AdminWidget", new { widgetZone = AdminWidgetZones.Guncelle, additionalData = Model })*@
+        </div>
+    </div>
+    @*@await Html.PartialAsync("_CreateOrUpdate", Model)*@
+
+    <div class="container">
+        <div class="content-header clearfix">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="input-group input-group-lg">
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(t=> t.Id)
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon label-info" id="sizing-addon1">Name</span>
+                                <input name="MyEntityName" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1" value="@Model.MyEntityName">
+                            </div>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon label-warning" id="sizing-addon1">Surname</span>
+                                <input name="MyEntitySurname" type="text" class="form-control" placeholder="Surname" aria-describedby="sizing-addon1" value="@Model.MyEntitySurname">
+                            </div>
+
+                        </div>
+                        @if (ViewBag.Hata != null)
+                        {
+                        <div class="alert alert-danger" role="alert">@ViewBag.Hata</div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+
+
